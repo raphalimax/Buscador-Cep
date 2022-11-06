@@ -1,0 +1,54 @@
+.container {
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(2, 0, 36, 1) 49%, rgba(9, 9, 121, 1) 100%);
+}
+.title {
+  font-size: 85px;
+  color: rgb(255, 255, 255);
+  animation: animaTitle 2s;
+}
+
+.form-group {
+  background-color: rgba(97, 96, 96, 0.2);
+  padding: 15px;
+  margin: 34px 0;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba (0, 0, 0, 0.5);
+}
+.form-group input {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+}
+.form-group input::placeholder {
+  color: #f1f1f1;
+}
+.btn {
+  background-color: #fff;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.2);
+  background-color: #f1f1f1;
+}
+
+@keyframes animaTitle {
+  from {
+    transform: rotatex(90deg);
+  }
+  to {
+    transform: rotatex(0deg);
+  }
+}
